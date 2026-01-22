@@ -1,0 +1,22 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Configurer LG Soundbar",
+        "description": "Entrez les détails de connexion pour votre LG Soundbar",
+        "data": {
+          "host": "Adresse IP",
+          "port": "Port",
+          "name": "Nom"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Échec de la connexion à la barre de son",
+      "unknown": "Une erreur inattendue s'est produite"
+    },
+    "abort": {
+      "already_configured": "L'appareil est déjà configuré"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+# Example configuration (for reference only - integration uses UI config)
+
+# LG Soundbar is configured through the Home Assistant UI:
+# Settings -> Devices & Services -> Add Integration -> LG Soundbar
+
+# Debug logging (optional)
+logger:
+  default: info
+  logs:
+    custom_components.lg_soundbar: debug
+
+# Example automation
+automation:
+  - alias: "Sync soundbar with TV"
+    trigger:
+      - platform: state
+        entity_id: media_player.tv
+        to: "playing"
+    action:
+      - service: media_player.select_source
+        target:
+          entity_id: media_player.lg_soundbar
+        data:
+          source: "HDMI"
+      - service: media_player.volume_set
+        target:
+          entity_id: media_player.lg_soundbar
+        data:
+          volume_level: 0.5
