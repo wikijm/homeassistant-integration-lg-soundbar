@@ -32,7 +32,7 @@ This integration works with LG soundbars that support the proprietary LG network
 2. Add this repository as a custom repository in HACS:
    - Go to HACS → Integrations
    - Click the three dots menu → Custom repositories
-   - Add the repository URL: `https://github.com/yourusername/homeassistant-lg-soundbar`
+   - Add the repository URL: `https://github.com/wikijm/homeassistant-integration-lg-soundbar`
    - Select "Integration" as the category
 3. Click "Install" on the LG Soundbar integration
 4. Restart Home Assistant
